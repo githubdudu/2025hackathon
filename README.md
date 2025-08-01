@@ -1,7 +1,22 @@
 
 # MERN stack template Client
 
-This is a frontend client build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+This is a frontend client build with Vite, React 18, TypeScript (optional), Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
+
+## TypeScript Support
+
+This project supports both JavaScript and TypeScript files:
+
+- **TypeScript is optional** - You can use both `.js/.jsx` and `.ts/.tsx` files
+- TypeScript strict mode is disabled for easier migration
+- ESLint is configured to handle both JS and TS files
+- Build process works with mixed JS/TS codebase
+
+### File Types Supported
+- `.js` - JavaScript files
+- `.jsx` - JavaScript React components
+- `.ts` - TypeScript files
+- `.tsx` - TypeScript React components
 
 ## What is inside?
 
@@ -46,8 +61,16 @@ npm run typecheck
 
 ### Build
 
+Build for production (JavaScript/TypeScript mixed):
+
 ```bash
 npm run build
+```
+
+Build with TypeScript compilation check:
+
+```bash
+npm run build:ts
 ```
 
 ### Test
